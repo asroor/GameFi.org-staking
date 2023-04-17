@@ -157,6 +157,7 @@
 .home-wrap {
     .ranks {
         margin-top: 41px;
+
         .rank-card {
             flex-direction: column;
         }
@@ -177,6 +178,7 @@
 
 .ranks .rank-first-about {
     padding-top: 125px;
+
     li {
         font-family: var(--Poppins);
         list-style: none;
@@ -213,6 +215,123 @@
             line-height: 40px;
             color: #FFFFFF;
             opacity: 0.5;
+        }
+    }
+}
+
+.stake-tabs {
+    margin-top: 50px;
+
+    ul {
+        li {
+            margin-right: 30px;
+            list-style: none;
+            font-family: var(--RDX);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            cursor: pointer;
+            opacity: 0.5;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        .tab-active {
+            color: #72F34B;
+            opacity: 1;
+
+            span {
+                display: block;
+                width: 100%;
+                height: 4px;
+                border-radius: 20px;
+                background-color: #72F34B;
+            }
+        }
+    }
+
+}
+
+.tab-numbers {
+    justify-content: center;
+    margin-top: 50px;
+    .tab-series {
+        list-style: none;
+        flex-direction: column;
+        margin-left: 5px;
+        align-items: end;
+
+        .number-line {
+            .line {
+                display: block;
+                background: #474750;
+                width: 121.06px;
+                height: 3px;
+                margin-right: 5px;
+            }
+            .line-2 {
+                display: block;
+                    background: #474750;
+                    width:60.53px;
+                    height: 3px;
+                margin-left: 5px;
+                }
+            .number {
+                font-family: var(--RDX);
+                width: 32px;
+                height: 32px;
+                background: #474750;
+                border-radius: 100%;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--black);
+
+                span {
+                    display: block;
+                    width: fit-content;
+                }
+            }
+        }
+
+        .num-text {
+            display: block;
+            font-family: var(--RDX);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            color: #ffff;
+            opacity: 0.5;
+            transform: translateX(20px);
+        }
+
+        &:first-child {
+            .number-line .line {
+                width: 60.53px;
+                    background: linear-gradient(270deg, #72F34B 0%, rgba(114, 243, 75, 0) 100%);
+                }
+            .num-text {
+                transform: translate(10px);
+            }
+        }
+
+        &:nth-child(3) {
+            .num-text {
+                transform: translate(6px);
+            }
+        }
+        &:nth-child(4) {
+            .num-text {
+                transform: translate(25px);
+            }
+        }
+        &:nth-child(5) {
+            .num-text {
+                transform: translate(-50px);
+            }
         }
     }
 }

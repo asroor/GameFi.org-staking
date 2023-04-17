@@ -185,4 +185,100 @@
   line-height: 40px;
   color: #FFFFFF;
   opacity: 0.5;
+}
+
+.stake-tabs {
+  margin-top: 50px;
+}
+.stake-tabs ul li {
+  margin-right: 30px;
+  list-style: none;
+  font-family: var(--RDX);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.stake-tabs ul li:last-child {
+  margin: 0;
+}
+.stake-tabs ul .tab-active {
+  color: #72F34B;
+  opacity: 1;
+}
+.stake-tabs ul .tab-active span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #72F34B;
+}
+
+.tab-numbers {
+  justify-content: center;
+  margin-top: 50px;
+}
+.tab-numbers .tab-series {
+  list-style: none;
+  flex-direction: column;
+  margin-left: 5px;
+  align-items: end;
+}
+.tab-numbers .tab-series .number-line .line {
+  display: block;
+  background: #474750;
+  width: 121.06px;
+  height: 3px;
+  margin-right: 5px;
+}
+.tab-numbers .tab-series .number-line .line-2 {
+  display: block;
+  background: #474750;
+  width: 60.53px;
+  height: 3px;
+  margin-left: 5px;
+}
+.tab-numbers .tab-series .number-line .number {
+  font-family: var(--RDX);
+  width: 32px;
+  height: 32px;
+  background: #474750;
+  border-radius: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+.tab-numbers .tab-series .number-line .number span {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.tab-numbers .tab-series .num-text {
+  display: block;
+  font-family: var(--RDX);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  opacity: 0.5;
+  transform: translateX(20px);
+}
+.tab-numbers .tab-series:first-child .number-line .line {
+  width: 60.53px;
+  background: linear-gradient(270deg, #72F34B 0%, rgba(114, 243, 75, 0) 100%);
+}
+.tab-numbers .tab-series:first-child .num-text {
+  transform: translate(10px);
+}
+.tab-numbers .tab-series:nth-child(3) .num-text {
+  transform: translate(6px);
+}
+.tab-numbers .tab-series:nth-child(4) .num-text {
+  transform: translate(25px);
+}
+.tab-numbers .tab-series:nth-child(5) .num-text {
+  transform: translate(-50px);
 }/*# sourceMappingURL=style.css.map */
