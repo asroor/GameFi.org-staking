@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: #1e1e1e;
+  font-style: normal;
+}
+
+.main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main-container {
+  max-width: 1764px;
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.fsn {
+  font-style: normal;
+}
