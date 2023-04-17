@@ -1,11 +1,12 @@
-// header series start
 @import url(../main.css);
 
 :root {
     --RDX: "Rajdhani", sans-serif;
+    --Poppins: "Poppins", sans-serif;
     --black: #13141F;
 }
 
+// header series start
 #header {
     padding: 24px 0;
 
@@ -35,6 +36,17 @@
     border: 1px solid transparent;
     padding-left: 50px;
 
+    &::-webkit-search-cancel-button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        background: url(../img/cancel.svg)no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
     &:focus {
         border: 1px solid #72F34B;
     }
@@ -62,3 +74,79 @@
 }
 
 // header series end
+
+
+// home series start
+#home {
+    .home-wrap {
+        .home-header {
+            background: linear-gradient(90deg, #28282E 0%, #13141F 50%, #13141F 100%);
+            border-radius: 3.2px;
+            overflow: hidden;
+        }
+    }
+}
+
+.home-header {
+    height: 93.09px;
+    border: 1px solid #474750   ;
+
+    .rank-series {
+        padding: 0 30px;
+        height: 100%;
+        border: 1px solid #474750;
+
+        .rank-img {
+            width: 80px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.home-header>div:first-child {
+    padding: 0;
+    padding-right: 30px;
+}
+.home-header>div:nth-child(2) {
+    border: 1px solid #393940;
+    border-left: none;
+}
+.home-header>div:nth-child(3){
+    border: 1px solid #28282E;
+    border-left: none;
+}
+.home-header>div:nth-child(4){
+    border: none;
+}
+
+.home-header {
+    .rank-about {
+        h3 {
+            font-family: var(--RDX);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
+            opacity: 0.5;
+
+            &:last-child {
+                font-weight: 500;
+                font-family: var(--Poppins);
+                color: #72F34B;
+                opacity: 1;
+            }
+        }
+        .rank-price {
+            font-family: var(--RDX);
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}
+
+// home series end
