@@ -81,7 +81,8 @@
 
 .home-header {
   height: 93.09px;
-  border: 1px solid #474750;
+  border: 1px solid rgba(71, 71, 80, 0.3568627451);
+  border-right: none;
 }
 .home-header .rank-series {
   padding: 0 30px;
@@ -134,4 +135,54 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+}
+
+.home-wrap .ranks {
+  margin-top: 41px;
+}
+.home-wrap .ranks .rank-card {
+  flex-direction: column;
+}
+
+.ranks .rank-card .rank-card-img {
+  width: 96px;
+}
+.ranks .rank-card .rank-card-img img {
+  width: 100%;
+}
+
+.ranks .rank-first-about {
+  padding-top: 125px;
+}
+.ranks .rank-first-about li {
+  font-family: var(--Poppins);
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.rank-card .rank-card-about {
+  flex-direction: column;
+}
+.rank-card .rank-card-about h4 {
+  font-family: var(--RDX);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.rank-card-about ul {
+  text-align: center;
+}
+.rank-card-about ul li {
+  font-family: var(--Poppins);
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  color: #FFFFFF;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */

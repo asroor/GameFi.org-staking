@@ -89,7 +89,8 @@
 
 .home-header {
     height: 93.09px;
-    border: 1px solid #474750   ;
+    border: 1px solid #4747505b;
+    border-right: none;
 
     .rank-series {
         padding: 0 30px;
@@ -110,15 +111,18 @@
     padding: 0;
     padding-right: 30px;
 }
+
 .home-header>div:nth-child(2) {
     border: 1px solid #393940;
     border-left: none;
 }
-.home-header>div:nth-child(3){
+
+.home-header>div:nth-child(3) {
     border: 1px solid #28282E;
     border-left: none;
 }
-.home-header>div:nth-child(4){
+
+.home-header>div:nth-child(4) {
     border: none;
 }
 
@@ -139,12 +143,76 @@
                 opacity: 1;
             }
         }
+
         .rank-price {
             font-family: var(--RDX);
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
             line-height: 32px;
+        }
+    }
+}
+
+.home-wrap {
+    .ranks {
+        margin-top: 41px;
+        .rank-card {
+            flex-direction: column;
+        }
+    }
+}
+
+.ranks {
+    .rank-card {
+        .rank-card-img {
+            width: 96px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.ranks .rank-first-about {
+    padding-top: 125px;
+    li {
+        font-family: var(--Poppins);
+        list-style: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 40px;
+        color: #fff;
+    }
+}
+
+.rank-card {
+    .rank-card-about {
+        flex-direction: column;
+
+        h4 {
+            font-family: var(--RDX);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+        }
+    }
+}
+
+.rank-card-about {
+    ul {
+        text-align: center;
+
+        li {
+            font-family: var(--Poppins);
+            list-style: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 40px;
+            color: #FFFFFF;
+            opacity: 0.5;
         }
     }
 }
