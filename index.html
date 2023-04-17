@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameFi.org-staking</title>
+    <!-- Swipper min css local link -->
+    <link rel="stylesheet" href="./libs/Swippper.min.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,8 +37,97 @@
 </head>
 
 <body>
+    <!-- Modal start -->
+    <section id="modal">
+        <div class="modal-wrap">
+            <div class="modal-title">
+                <h2>CONNECT WALLET</h2>
+                <h4>1. AGREE TO GAMEFI.ORG TERMS & CONDITIONS</h4>
+                <div class="modal-check">
+                    <input id="modal-check" type="checkbox">
+                    <label for="modal-check">
+                        I have read and agreed with the <a href="/">Terms of Service</a> and <a href="/">Privacy
+                            Policy</a>.
+                    </label>
+                </div>
+            </div>
+            <h3>2. CHOOSE NETWORK</h3>
+            <div class="modal-newtwork">
+                <div class="series">
+                    <div class="series-img">
+                        <img src="./img/modal-card.svg" alt="">
+                    </div>
+                    <p>Ethereum</p>
+                </div>
+                <div class="series">
+                    <div class="series-img">
+                        <img src="./img/modal-card-2.svg" alt="">
+                    </div>
+                    <p>BNB Chain</p>
+                </div>
+                <div class="series">
+                    <div class="series-img">
+                        <img src="./img/modal-card-3.svg" alt="">
+                    </div>
+                    <p>Polygon</p>
+                </div>
+                <div class="series">
+                    <div class="series-img">
+                        <img src="./img/modal-card-4.svg" alt="">
+                    </div>
+                    <p>Avalanche</p>
+                </div>
+                <div class="series">
+                    <div class="series-img">
+                        <img src="./img/modal-card-5.svg" alt="">
+                    </div>
+                    <p>Arbitrum One</p>
+                </div>
+                <div class="series">
+                    <div class="series-img">
+                        <img src="./img/modal-card-6.webp" alt="">
+                    </div>
+                    <p>Dogechain</p>
+                </div>
+                <div class="series">
+                    <div class="series-img">
+                        <img src="./img/modal-card-7.webp" alt="">
+                    </div>
+                    <p>Oasys</p>
+                </div>
+            </div>
+            <h3>3. CHOOSE WALLET</h3>
+            <div class="modal-newtwork modal-newtwork-2">
+                <div class="series">
+                   <div class="series-img">
+                    <img src="./img/modal-card-9.svg" alt="">
+                   </div>
+                    <p>MetaMask</p>
+                </div>
+                <div class="series">
+                   <div class="series-img">
+                    <img src="./img/modal-card-10.svg" alt="">
+                   </div>
+                    <p>Binance Wallet</p>
+                </div>
+                <div class="series">
+                   <div class="series-img">
+                    <img src="./img/modal-card-11.svg" alt="">
+                   </div>
+                    <p>WalletConnect</p>
+                </div>
+                <div class="series">
+                   <div class="series-img">
+                    <img src="./img/modal-card-8.svg" alt="">
+                   </div>
+                    <p>WalletConnect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal end -->
     <!-- Sidebar series start -->
-    <section id="sidebar" class="d-flex align-center justify-center">
+    <section id="sidebar" class="d-flex align-center">
         <a class="sidebar-logo" href="#">
             <img src="./img/logo.svg" alt="">
         </a>
@@ -200,13 +291,13 @@
                             </div>
                             <div class="rank-series d-flex align-center">
                                 <div class="rank-about">
-                                    <h3 class="fsn">$GAFI Left To Next Rank</h3>
+                                    <h3 class="fsn"><span>$GAFI Left To</span> Next Rank</h3>
                                     <h3 class="fsn">Connect Wallet</h3>
                                 </div>
                             </div>
                             <div class="rank-series d-flex align-center">
                                 <div class="rank-about">
-                                    <h3 class="fsn">Total $GAFI Staked</h3>
+                                    <h3 class="fsn">Total <span>$GAFI</span> Staked</h3>
                                     <h3 style="color: #fff;" class="fsn rank-price">517,573.598</h3>
                                 </div>
                             </div>
@@ -218,81 +309,101 @@
                                 <li>Max Individual Allocation</li>
                                 <li>Withdrawal Delay</li>
                             </ul>
-                            <div class="rank-card d-flex align-center justify-center">
-                                <div class="rank-card-img">
-                                    <img src="./img/rank-card.png" alt="">
-                                </div>
-                                <div class="rank-card-about d-flex align-center justify-center">
-                                    <h4>Start</h4>
-                                    <ul>
-                                        <li>Min 0 $GAFI</li>
-                                        <li>—</li>
-                                        <li>—</li>
-                                        <li>—</li>
-                                    </ul>
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="rank-card d-flex align-center justify-center">
+                                            <div class="rank-card-img">
+                                                <img src="./img/rank-card.png" alt="">
+                                            </div>
+                                            <div class="rank-card-about d-flex align-center justify-center">
+                                                <h4>Start</h4>
+                                                <ul>
+                                                    <li>Min 0 $GAFI</li>
+                                                    <li>—</li>
+                                                    <li>—</li>
+                                                    <li>—</li>
+                                                </ul>
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rank-card d-flex align-center justify-center">
+                                            <div class="rank-card-img">
+                                                <img style="transform: rotate(-90deg);" src="./img/rank-card-2.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="rank-card-about d-flex align-center justify-center">
+                                                <h4>Rookie</h4>
+                                                <ul>
+                                                    <li>Min 20 $GAFI</li>
+                                                    <li>Lottery</li>
+                                                    <li>$60</li>
+                                                    <li>5 days</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rank-card d-flex align-center justify-center">
+                                            <div class="rank-card-img">
+                                                <img src="./img/rank-card-3.png" alt="">
+                                            </div>
+                                            <div class="rank-card-about d-flex align-center justify-center">
+                                                <h4>Elite</h4>
+                                                <ul>
+                                                    <li>Min 100 $GAFI</li>
+                                                    <li>Lottery</li>
+                                                    <li>$300</li>
+                                                    <li>8 days</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rank-card d-flex align-center justify-center">
+                                            <div class="rank-card-img">
+                                                <img src="./img/rank-card-4.png" alt="">
+                                            </div>
+                                            <div class="rank-card-about d-flex align-center justify-center">
+                                                <h4>Pro</h4>
+                                                <ul>
+                                                    <li>Min 500 $GAFI</li>
+                                                    <li>Lottery</li>
+                                                    <li>$700</li>
+                                                    <li>12 days</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rank-card d-flex align-center justify-center">
+                                            <div class="rank-card-img">
+                                                <img src="./img/rank-card-5.png" alt="">
+                                            </div>
+                                            <div class="rank-card-about d-flex align-center justify-center">
+                                                <h4>Elite</h4>
+                                                <ul>
+                                                    <li>Auction NFT required</li>
+                                                    <li>Guaranteed 20% Pool</li>
+                                                    <li>—</li>
+                                                    <li>30 days</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="rank-card d-flex align-center justify-center">
-                                <div class="rank-card-img">
-                                    <img style="transform: rotate(-90deg);" src="./img/rank-card-2.png" alt="">
-                                </div>
-                                <div class="rank-card-about d-flex align-center justify-center">
-                                    <h4>Rookie</h4>
-                                    <ul>
-                                        <li>Min 20 $GAFI</li>
-                                        <li>Lottery</li>
-                                        <li>$60</li>
-                                        <li>5 days</li>
-                                    </ul>
 
-                                </div>
-                            </div>
-                            <div class="rank-card d-flex align-center justify-center">
-                                <div class="rank-card-img">
-                                    <img src="./img/rank-card-3.png" alt="">
-                                </div>
-                                <div class="rank-card-about d-flex align-center justify-center">
-                                    <h4>Elite</h4>
-                                    <ul>
-                                        <li>Min 100 $GAFI</li>
-                                        <li>Lottery</li>
-                                        <li>$300</li>
-                                        <li>8 days</li>
-                                    </ul>
 
-                                </div>
-                            </div>
-                            <div class="rank-card d-flex align-center justify-center">
-                                <div class="rank-card-img">
-                                    <img src="./img/rank-card-4.png" alt="">
-                                </div>
-                                <div class="rank-card-about d-flex align-center justify-center">
-                                    <h4>Pro</h4>
-                                    <ul>
-                                        <li>Min 500 $GAFI</li>
-                                        <li>Lottery</li>
-                                        <li>$700</li>
-                                        <li>12 days</li>
-                                    </ul>
 
-                                </div>
-                            </div>
-                            <div class="rank-card d-flex align-center justify-center">
-                                <div class="rank-card-img">
-                                    <img src="./img/rank-card-5.png" alt="">
-                                </div>
-                                <div class="rank-card-about d-flex align-center justify-center">
-                                    <h4>Elite</h4>
-                                    <ul>
-                                        <li>Auction NFT required</li>
-                                        <li>Guaranteed 20% Pool</li>
-                                        <li>—</li>
-                                        <li>30 days</li>
-                                    </ul>
 
-                                </div>
-                            </div>
+
                         </div>
                         <div class="stake-tabs">
                             <ul class="d-flex align-center">
@@ -611,6 +722,8 @@
 
     </div>
     <!-- wrapper enc -->
+    <!-- Sipper min js local link -->
+    <script src="./libs/Swpper.min.js"></script>
     <!-- App js local link -->
     <script src="./js/app.js"></script>
 </body>
